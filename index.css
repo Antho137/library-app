@@ -1,0 +1,159 @@
+body {
+    min-height: 100vh;
+    margin: 0 auto;
+    padding: 0;
+    font-family: sans-serif;
+    background-image: url(background.avif);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.header {
+    margin: 0;
+    padding: 10px 20px;
+    border: 1px solid #fff;
+    background-color: #2F4F4F;
+}
+
+h1 {
+    margin: 0;
+}
+
+h1, h2 {
+    padding: 6px;
+    font-weight: 500;
+    color: #fff;
+    background: #2F4F4F;
+    text-align: center;
+    border-radius: 6px;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    padding: 30px 150px;
+}
+
+.record-form {
+    padding: 20px;
+    margin-top: 0;
+    color: #2F4F4F;
+    font-weight: 500;
+    border-radius: 6px;
+}
+
+.record-form form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-input {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 12px;
+}
+
+.form-input label {
+    margin-bottom: 3px;
+    text-align: left;
+}
+
+.form-input input {
+    width: 186px;
+    height: 25px;
+    padding: 0 6px;
+    font-size: 1rem;
+    border-radius: 6px;
+    border: 1px solid #d3d3d3;
+}
+
+.form-input input:focus {
+    outline: none;
+}
+
+.form-input button {
+    width: 186px;
+    margin: 12px 0;
+    border: none;
+    padding: 8px;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 6px;
+    background-color: #2F4F4F;
+}
+
+.record-list {
+    padding: 20px;
+    font-weight: 500;
+    border-radius: 6px;
+}
+
+#book-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+#book-list .card {
+    width: 220px;
+    padding: 20px 16px;
+    color: #2F4F4F;
+    text-align: center;
+    border-radius: 6px;
+    border: 2px solid #fff;
+    box-shadow: 8px 16px 8px rgba(0, 0, 0, .3);
+}
+
+#book-list .card p {
+    margin: 0 0 6px;
+}
+ 
+.card button {
+    border: none;
+    margin: 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    padding: 6px 12px;
+    color: #fff;
+    background: #2F4F4F;
+}
+
+@media screen and (max-width: 980px) {
+
+    .main {
+        padding: 0 30px;
+    }    
+}
+
+@media screen and (max-width: 860px) {
+    
+    body {
+        max-width: 760px;
+    }    
+
+    .main {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 0;
+    }   
+}
+
+@media screen and (max-width: 540px) {
+    
+    body {
+        max-width: 100%;
+        margin: 0;
+    }
+
+    .header h1 {
+        margin-top: 0;
+    }  
+}

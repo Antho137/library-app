@@ -7,7 +7,7 @@
 
 ## Features
 
-- Library App project from Odin intermediate HTML and CSS course.
+- Library App project from Odin intermediate JavaScript course.
 - Clicking the "Add New Book" button after filling the form displays each book on their own card on the page.
 - The read button on each book’s display changes its read status.
 - The delete button on each book’s display removes the book from the library
